@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TO-DO List</h1>
+            <p id="motivational-quote">Keep it up!</p>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+
+        </div>
+
+        <div class="statscontainer">
+            <div class="details">
+                <p>Progress:</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="task-stats">0 / 0</p>
+            </div>
+        </div>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Write your task">
+            <select id="task-category">
+                <option value="General">General</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <select id="task-priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button type="submit">+</button>
+        </form>
+
+        <ul class="task-list" id="task-list"></ul>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
